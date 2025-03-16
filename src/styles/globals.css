@@ -1,0 +1,367 @@
+@import "tailwindcss";
+
+
+/* Header */
+header {
+  backdrop-filter: blur(5px); /* Effetto blur sullo sfondo */
+}
+
+/* Effetto sfumato per il bordo inferiore */
+header {
+  box-shadow: 0px 4px 8px rgba(26, 26, 26, 0.3); /* Ombra più morbida di default */
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.5), rgba(0, 0, 0, 1)); /* Sfuma il bordo */
+}
+
+header:hover {
+  box-shadow: 0px 6px 12px rgba(26, 26, 26, 0.5); /* Ombra più forte al passaggio del mouse */
+}
+
+/* Menu mobile */
+@media (max-width: 768px) {
+  header .md:hidden {
+    display: block;
+  }
+  header .md:flex {
+    display: none;
+  }
+}
+
+
+.hero-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Overlay nero semi-trasparente */
+  z-index: 1;
+}
+
+
+.hr-line {
+  border-top: 2px solid white; /* Linea bianca */
+  width: 50%;
+  margin: 0 auto;
+  opacity: 0.3;
+  padding-bottom: 5rem;
+}
+
+
+.hr-line-footer {
+  border-top: 2px solid white; /* Linea bianca */
+  width: 75%;
+  margin: 0 auto;
+  opacity: 0.3;
+  padding-bottom: 5rem;
+}
+
+
+/* Effetto Glass per i contenitori */
+.backdrop-blur-md {
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* Aggiungi un effetto hover per ogni fase */
+.timeline-item:hover {
+  transform: scale(1.05); /* Ingrandisce la fase al passaggio del mouse */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Aggiunge ombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glass Effect per le card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* Colore trasparente */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Sfocatura dietro */
+  -webkit-backdrop-filter: blur(10px); /* Per Safari */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover sulle card */
+.glass-card:hover {
+  transform: scale(1.05); /* Ingrandisce la card al passaggio del mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aggiungi ombra più intensa */
+}
+
+
+/* Linea della timeline */
+.timeline-line {
+  position: fixed; /* Imposta la linea come fissa */
+  top: 25%; /* Inizia al 25% dalla parte superiore */
+  left: 50%;
+  width: 4px; /* Imposta la larghezza della linea */
+  background-color: rgba(255, 255, 255, 0.1); /* Colore chiaro per la linea */
+  transition: top 0.3s ease; /* Aggiungi un effetto per la posizione */
+  z-index: 10; /* Assicura che la linea sia visibile sopra gli altri elementi */
+}
+
+
+.timeline-item {
+  position: relative;
+}
+
+/* Eventuale animazione al passaggio del mouse */
+.timeline-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Glass Effect per le card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* Colore trasparente */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Sfocatura dietro */
+  -webkit-backdrop-filter: blur(10px); /* Per Safari */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover sulle card */
+.glass-card:hover {
+  transform: scale(1.05); /* Ingrandisce la card al passaggio del mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aggiungi ombra più intensa */
+}
+
+button {
+  transition: all 0.3s ease; /* Aggiunge una transizione fluida per ogni cambiamento */
+  background-color: #272727; /* Colore di sfondo scuro */
+}
+
+button:hover {
+  transform: scale(1.05); /* Ingrandisce il bottone */
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Stile per le immagini */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+section#how-it-works h2 {
+  color: #ffffff; /* Colore per il titolo */
+}
+
+section#how-it-works h3 {
+  color: #ffffff; /* Colore per i sottotitoli */
+  text-transform: uppercase;
+}
+
+section#how-it-works p {
+  color: #cbd5e0; /* Colore chiaro per il testo */
+  line-height: 1.6;
+}
+
+section#how-it-works i {
+  font-size: 2rem; /* Imposta la dimensione delle icone */
+}
+
+/* Styling per la disposizione a colonna */
+section#how-it-works .flex {
+  flex-direction: column; /* Le fasi saranno una sotto l'altra su schermi piccoli */
+}
+
+/* CTA Hover effetto */
+button:hover {
+  background-color: #f59e0b; /* Giallo brillante */
+  transform: scale(1.05); /* Ingrandisce il bottone */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombra per l'effetto */
+}
+
+
+
+/* Stile per la tabella */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  background-color: #1a202c;
+  color: #fbbf24;
+}
+
+tr:nth-child(even) {
+  background-color: #2d3748;
+}
+
+tr:hover {
+  background-color: #4a5568;
+}
+
+/* Bottone Hover effetto */
+button:hover {
+  background-color: #f59e0b; /* Giallo brillante */
+  transform: scale(1.05); /* Ingrandisce il bottone */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombra per l'effetto */
+}
+
+/* Adatta il grafico a torta */
+.pie-chart-container {
+  max-width: 100%;
+  height: auto;
+  background-color: #2d3748; /* Colore di sfondo per il contenitore del grafico */
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+
+
+section#rewards h3 {
+  text-transform: uppercase;
+}
+
+section#rewards .text-gray-400 {
+  color: #cbd5e0;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* Colore trasparente */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* Sfocatura dietro */
+  -webkit-backdrop-filter: blur(10px); /* Per Safari */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover sulle card */
+.glass-card:hover {
+  transform: scale(1.05); /* Ingrandisce la card al passaggio del mouse */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aggiungi ombra più intensa */
+}
+
+/* Bottone hover effetto */
+button:hover {
+  background-color: #f59e0b; /* Giallo brillante */
+  transform: scale(1.05); /* Ingrandisce il bottone */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Ombra per l'effetto */
+}
+
+
+/* Freccia animata per espandere/contrarre */
+section#faq span {
+  transition: transform 0.3s ease;
+}
+
+section#faq .text-gray-400 {
+  margin-top: 1rem;
+}
+
+/* Effetto per quando le frecce sono dirette verso l'alto */
+section#faq .text-white {
+  cursor: pointer;
+}
+
+section#faq .bg-black {
+  border-radius: 10px;
+}
+
+section#faq .bg-opacity-50 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Quando l'accordion è espanso, la freccia si ruota */
+section#faq .text-white {
+  transition: transform 0.3s ease;
+}
+
+section#faq .text-white:hover {
+  transform: scale(1.1);
+}
+
+
+/* Animazione fluida per l'accordion */
+.transition-all {
+  transition: height 0.5s ease-in-out;
+}
+
+/* Aggiungi un po' di stile per le frecce */
+section#faq span {
+  transition: transform 0.3s ease;
+}
+
+section#faq .text-white:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+/* Stile generale delle card del team */
+section#team .bg-opacity-50 {
+  background: rgba(0, 0, 0, 0.5); /* Sfumature traslucide */
+  backdrop-filter: blur(10px); /* Effetto glassmorphism */
+}
+
+/* Aggiungi ombra quando l'utente passa sopra la card */
+section#team .bg-black:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  transform: scale(1.05); /* Effetto zoom */
+  transition: all 0.3s ease;
+}
+
+/* Stile delle icone social */
+section#team a {
+  transition: all 0.3s ease;
+}
+
+section#team a:hover {
+  transform: scale(1.1); /* Leggero ingrandimento sulle icone */
+  color: #1DA1F2; /* Colore blu di Twitter al passaggio del mouse */
+}
+
+
+/* Stile per il modulo di contatto */
+input[type="email"], textarea {
+  background-color: rgba(0, 0, 0, 0.7); /* Effetto di trasparenza */
+  border: 1px solid #333; /* Bordo scuro */
+  color: white; /* Colore del testo bianco */
+}
+
+button {
+  transition: all 0.3s ease; /* Transizione per un effetto di animazione */
+}
+
+button:hover {
+  background-color: #4caf50; /* Cambia colore al passaggio del mouse */
+}
+
+a:hover {
+  transform: scale(1.1); /* Effetto ingrandimento sulle icone social */
+}
+
+
+/* Footer */
+footer {
+  background-color: #111; /* Colore scuro per lo sfondo */
+  backdrop-filter: blur(10px); /* Aggiungi un effetto blur se desideri */
+}
+
+footer a {
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #38a169; /* Colore verde al passaggio del mouse */
+}
+
+/* Icone social */
+footer .fa {
+  transition: transform 0.3s ease;
+}
+
+footer .fa:hover {
+  transform: scale(1.1); /* Effetto di ingrandimento */
+}
