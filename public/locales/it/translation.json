@@ -1,0 +1,282 @@
+{
+  "header": {
+    "about": "Chi siamo",
+    "howItWorks": "Come funziona",
+    "roadmap": "Piano di sviluppo",
+    "budget": "Distribuzione",
+    "rewards": "Ricompense",
+    "contact": "Contatti",
+    "login": "Accedi"
+  },
+
+  "hero": {
+    "title": "Il futuro del mining decentralizzato",
+    "description": "Entra in BlockRoots e scopri un modo trasparente e collaborativo per guadagnare con il mining.",
+    "cta": {
+      "join": "Partecipa all'ICO",
+      "learnMore": "Scopri di più"
+    }
+  },
+
+  "about": {
+    "title": "Cos’è BlockRoots",
+    "description": "BlockRoots è una mining farm decentralizzata creata dalla comunità per la comunità. Stiamo cambiando le regole del gioco, rendendo il mining semplice, trasparente e vantaggioso per tutti.",
+    "vision": {
+      "title": "La nostra visione",
+      "description": "Essere leader nel mining decentralizzato, offrendo a tutti un ecosistema sostenibile e guidato dalla comunità."
+    },
+    "mission": {
+      "title": "La nostra missione",
+      "description": "Rendere il mining accessibile a tutti, condividendo i profitti in modo equo e usando la blockchain per garantire trasparenza e inclusione."
+    },
+    "why": {
+      "title": "Perché scegliere BlockRoots?",
+      "description": "A differenza dei grandi colossi centralizzati, abbattiamo le barriere d’ingresso e premiamo la nostra comunità con una giusta quota dei profitti."
+    },
+    "tokenomics": {
+      "title": "Il token $ROOT e il suo ecosistema",
+      "description": "Il token $ROOT è il cuore di BlockRoots: ti permette di partecipare, decidere e guadagnare nella nostra mining farm decentralizzata.",
+      "tax": "Tassa del 5% su ogni transazione: 2% per migliorare l’hardware, 1% ai possessori, 1% per le operazioni, 1% per la crescita.",
+      "profitSharing": "Condivisione dei profitti: fino al 15% dei guadagni mensili, in base a quanto tempo tieni i token (6+ mesi).",
+      "staking": "Staking e premi: ottieni più $ROOT partecipando attivamente alla comunità."
+    },
+    "cta": "Partecipa all'ICO"
+  },
+
+  "howItWorks": {
+    "title": "Come opera BlockRoots",
+    "description": "BlockRoots è una mining farm decentralizzata in cui la comunità mina insieme, divide i profitti e plasma il futuro con il token $ROOT.",
+    "step1": {
+      "title": "Inizia con $ROOT",
+      "description": "Acquista i token $ROOT durante l’ICO (pre-vendita a $0.01, vendita pubblica a $0.02) per sostenere la farm e accedere a profitti e decisioni."
+    },
+    "step2": {
+      "title": "Mining e crescita",
+      "description": "La farm mina criptovalute e reinveste una tassa del 5% (2% hardware, 1% operazioni, 1% marketing, 1% premi) per espandersi continuamente."
+    },
+    "step3": {
+      "title": "Guadagna e contribuisci",
+      "description": "Tieni i tuoi $ROOT per ricevere fino al 15% dei profitti mensili (dopo 6+ mesi), fai staking per premi extra e vota sul futuro del progetto."
+    },
+    "cta": "Partecipa ora all’ICO"
+  },
+
+  "roadmap": {
+    "title": "Il nostro piano",
+    "phase1": {
+      "title": "Fase 1: Pre-ICO e preparativi",
+      "description": "Creazione del whitepaper, sviluppo del contratto smart del token $ROOT e organizzazione dell’ICO."
+    },
+    "phase2": {
+      "title": "Fase 2: Lancio dell’ICO",
+      "description": "Raccolta fondi, distribuzione dei token e acquisto iniziale dell’hardware per il mining."
+    },
+    "phase3": {
+      "title": "Fase 3: Espansione e coinvolgimento",
+      "description": "Crescita della farm, distribuzione dei profitti mensili e coinvolgimento della comunità con airdrop ed eventi."
+    },
+    "phase4": {
+      "title": "Fase 4: Nuove funzionalità",
+      "description": "Introduzione di strumenti per monitorare i profitti, premi per chi tiene i token a lungo e quotazione di $ROOT sugli exchange."
+    },
+    "phase5": {
+      "title": "Fase 5: DeFi e sostenibilità",
+      "description": "Integrazione di soluzioni DeFi ed energia sostenibile per potenziare l’utilità di $ROOT e la durata della farm."
+    },
+    "cta": "Partecipa ora all’ICO"
+  },
+
+  "budget": {
+    "title": "Distribuzione e trasparenza",
+    "description": "BlockRoots offre totale chiarezza su come i 1 miliardo di token $ROOT vengono utilizzati per creare un ecosistema di mining sostenibile e partecipativo.",
+    "labels": {
+      "ico": "ICO (40%)",
+      "team": "Team e fondatori (10%)",
+      "miningFarm": "Mining farm (20%)",
+      "community": "Comunità e premi (10%)",
+      "marketing": "Marketing e partnership (10%)",
+      "reserve": "Riserva strategica (10%)"
+    },
+    "table": {
+      "category": "Categoria",
+      "percentage": "Percentuale",
+      "tokens": "Token"
+    },
+    "chartTitle": "Distribuzione dei token",
+    "cta": "Partecipa ora all’ICO"
+  },
+
+  "rewards": {
+    "title": "Premi per chi possiede $ROOT",
+    "description": "Sblocca vantaggi esclusivi tenendo token $ROOT nel nostro ecosistema di mining decentralizzato: più resti con noi, più grande sarà la tua parte!",
+    "tier1": {
+      "title": "Livello I - Nuovo arrivato",
+      "duration": "1-3 mesi",
+      "description": "Inizia la tua avventura con BlockRoots e ottieni vantaggi immediati.",
+      "benefits": {
+        "profit": "Ricevi",
+        "profitPercentage": "il 5% dei profitti mensili di mining",
+        "profitEnd": "fin dal primo giorno.",
+        "updates": "Rimani aggiornato con news esclusive sui progressi del mining.",
+        "staking": "Accedi allo staking per far crescere i tuoi $ROOT."
+      }
+    },
+    "tier2": {
+      "title": "Livello II - Sostenitore fedele",
+      "duration": "3-6 mesi",
+      "description": "Rafforza la tua posizione e fai sentire la tua voce nel nostro ecosistema.",
+      "benefits": {
+        "profit": "Aumenta i guadagni con",
+        "profitPercentage": "il 10% dei profitti mensili",
+        "staking": "Ottieni premi di staking prioritari per maggiori ritorni.",
+        "governance": "Vota sulle decisioni chiave per dare forma a BlockRoots."
+      }
+    },
+    "tier3": {
+      "title": "Livello III - Veterano",
+      "duration": "6+ mesi",
+      "description": "Diventa un pilastro di BlockRoots con ricompense di prim’ordine.",
+      "benefits": {
+        "profit": "Massimizza i tuoi guadagni con",
+        "profitPercentage": "il 15% dei profitti mensili",
+        "staking": "Sfrutta bonus di staking avanzati per una crescita a lungo termine.",
+        "events": "Partecipa a eventi esclusivi e sessioni AMA con il team."
+      }
+    },
+    "tier4": {
+      "title": "Livello IV - Maestro dello staking",
+      "duration": "$ROOT in staking",
+      "description": "Metti in staking i tuoi $ROOT per ottenere premi esclusivi e un ruolo di spicco.",
+      "benefits": {
+        "perks": "Tutti i vantaggi del Veterano, e non solo.",
+        "staking": "Guadagna",
+        "stakingTokens": "più token $ROOT",
+        "stakingEnd": "con lo staking.",
+        "governance": "Hai la priorità per proporre e votare sugli sviluppi dell’ecosistema."
+      }
+    },
+    "cta": "Prendi i tuoi $ROOT ora"
+  },
+
+  "faq": {
+    "title": "Domande frequenti",
+    "q1": {
+      "question": "Cos’è BlockRoots in parole semplici?",
+      "answer": "BlockRoots è un progetto di mining di criptovalute gestito dalla comunità. Acquisti token $ROOT per entrare, condividi i profitti del mining e contribuisci a decidere come evolve il progetto. È facile, chiaro e aperto a tutti!"
+    },
+    "q2": {
+      "question": "Come posso partecipare a BlockRoots?",
+      "answer": "Ti basta prendere qualche token $ROOT durante l’ICO (da $0.01 in pre-vendita). Tienili per ottenere fino al 15% dei profitti mensili dopo 6 mesi, o mettili in staking per premi extra. Ecco fatto!"
+    },
+    "q3": {
+      "question": "A cosa servono i token $ROOT?",
+      "answer": "I token $ROOT sono il tuo pass per BlockRoots: ti fanno guadagnare profitti dal mining (dal 5% al 15% al mese, a seconda di quanto li tieni), votare sul futuro del progetto e ottenere token extra con lo staking. Sono il motore del nostro sistema decentralizzato."
+    },
+    "q4": {
+      "question": "Come funziona tecnicamente la condivisione dei profitti?",
+      "answer": "I profitti delle criptovalute minate (come Bitcoin o Ethereum) vengono convertiti mensilmente in una stablecoin e distribuiti ai possessori di $ROOT: 5% per chi li tiene 1-3 mesi, 10% per 3-6 mesi, 15% per 6+ mesi, in base a quanti token hai."
+    },
+    "q5": {
+      "question": "A cosa serve la tassa del 5% sulle transazioni?",
+      "answer": "Ogni scambio di $ROOT ha una tassa del 5%, così divisa: 2% per potenziare l’hardware, 1% per le spese operative, 1% per il marketing e 1% torna ai possessori come premio. È il nostro modo per crescere e ricompensare la comunità."
+    },
+    "q6": {
+      "question": "Come sono distribuiti i token $ROOT?",
+      "answer": "Dei 1 miliardo di token $ROOT: 40% all’ICO, 20% per la mining farm, 10% al team (bloccati per 3 mesi), 10% per premiare la comunità, 10% per il marketing e 10% come riserva per il futuro."
+    },
+    "q7": {
+      "question": "Cosa succede se non partecipo all’ICO?",
+      "answer": "Tranquillo! Dopo l’ICO potrai comunque acquistare $ROOT sugli exchange quando saranno listati (Fase 4). Guadagnerai profitti e premi, ma chi entra con l’ICO ha il prezzo migliore ($0.01-$0.02)."
+    },
+    "q8": {
+      "question": "Come influisce lo staking sui premi e sulla governance?",
+      "answer": "Con lo staking blocchi i tuoi $ROOT per ottenere token extra (oltre al 5-15% dei profitti). Inoltre, aumenti il tuo peso nella governance, avendo più voce in capitolo per proporre e decidere gli aggiornamenti della farm."
+    }
+  },
+
+  "team": {
+    "title": "Il nostro team",
+    "description": "Un gruppo di esperti in blockchain, mining e gestione della comunità, uniti per fare di BlockRoots una forza decentralizzata di successo.",
+    "members": {
+      "marco": {
+        "name": "Marco Rossi",
+        "role": "Fondatore e ideatore",
+        "bio": "Con 10 anni di esperienza nel mining e nell’innovazione blockchain, Marco ha creato BlockRoots per rendere il mining accessibile e redditizio per tutti, grazie alla decentralizzazione."
+      },
+      "elena": {
+        "name": "Elena Bianchi",
+        "role": "Esperta blockchain",
+        "bio": "Elena, con 8 anni di esperienza, è un genio dei contratti smart. Assicura che il token $ROOT e la governance funzionino alla perfezione sulla blockchain."
+      },
+      "luca": {
+        "name": "Luca Verdi",
+        "role": "Responsabile comunità e operazioni",
+        "bio": "Luca unisce la comunità di BlockRoots alle operazioni, usando le sue capacità di coinvolgimento e logistica per far crescere la nostra farm in modo efficiente."
+      }
+    }
+  },
+
+
+
+
+
+
+
+    "ico": {
+      "hero": {
+        "title": "Partecipa all’ICO di BlockRoots",
+        "description": "Unisciti alla rivoluzione del mining decentralizzato: acquista i token $ROOT e diventa parte di un futuro trasparente e redditizio!",
+        "cta": "Acquista ora i tuoi $ROOT"
+      },
+      "details": {
+        "title": "Dettagli dell’ICO",
+        "phase1": {
+          "title": "Pre-vendita",
+          "description": "Prezzo: $0.01 per $ROOT - Disponibili: 200M token - Inizia: 1° aprile 2025"
+        },
+        "phase2": {
+          "title": "Vendita pubblica",
+          "description": "Prezzo: $0.02 per $ROOT - Disponibili: 200M token - Inizia: 15 aprile 2025"
+        },
+        "total": {
+          "title": "Totale ICO",
+          "description": "400M token $ROOT (40% del totale) per finanziare la nostra mining farm"
+        }
+      },
+      "benefits": {
+        "title": "Perché partecipare ora?",
+        "price": {
+          "title": "Prezzo imbattibile",
+          "description": "Ottieni $ROOT a partire da $0.01, il miglior affare prima della quotazione!"
+        },
+        "profits": {
+          "title": "Profitti immediati",
+          "description": "Inizia a guadagnare fino al 15% dei profitti mensili della farm."
+        },
+        "voice": {
+          "title": "La tua voce conta",
+          "description": "Decidi il futuro di BlockRoots con il potere di voto dei token."
+        }
+      },
+      "howTo": {
+        "title": "Come partecipare",
+        "step1": "Crea un wallet compatibile (es. MetaMask) e aggiungi fondi in criptovaluta (ETH, USDT).",
+        "step2": "Visita il nostro portale ICO e connetti il tuo wallet.",
+        "step3": "Scegli quanti $ROOT vuoi acquistare e completa la transazione.",
+        "step4": "Ricevi i tuoi token e inizia a guadagnare con BlockRoots!"
+      },
+      "finalCta": {
+        "title": "Non perdere questa occasione!",
+        "description": "L’ICO è il momento migliore per entrare in BlockRoots: assicurati i tuoi $ROOT e unisciti alla rivoluzione del mining!",
+        "button": "Acquista ora"
+      }
+    }
+
+
+
+
+
+
+
+
+}

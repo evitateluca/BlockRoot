@@ -54,7 +54,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className="text-gray-400 mb-4">support@blockroots.com</p>
-            <p className="text-gray-400">© 2024 BlockRoots. All Rights Reserved.</p>
+            <p className="text-gray-400">© 2025 BlockRoots. All Rights Reserved.</p>
             <div className="mt-4">
               <a href="/terms" className="text-gray-400 hover:text-white">Terms & Conditions</a> | 
               <a href="/privacy" className="text-gray-400 hover:text-white"> Privacy Policy</a>

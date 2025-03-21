@@ -19,8 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AOSInitializer /> {/* Inizializza AOS lato client */}
-        <Header /> 
         <Suspense fallback={<div>Loading...</div>}>
           <TranslationProvider>
             <main>{children}</main>
