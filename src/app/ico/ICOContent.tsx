@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { IoIosArrowDown } from "react-icons/io";
 
 export default function ICOContent() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("translation"); // Aggiornato a "translation"
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -84,7 +84,7 @@ export default function ICOContent() {
           <IoIosArrowDown className={`ml-2 transition-transform ${isDropdownOpen ? "rotate-180" : ""}`} />
         </button>
         {isDropdownOpen && (
-          <div className="relative left-0 mt-2 w-full bg-black bg-opacity-90 rounded-lg shadow-lg z-10">
+          <div className="absolute left-0 mt-2 w-full bg-black bg-opacity-90 rounded-lg shadow-lg z-10">
             {wallets.map((wallet) => (
               <a
                 key={wallet.name}

@@ -5,12 +5,14 @@ import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import ReactCountryFlag from "react-country-flag";
+import i18n from "@/lib/i18n";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
-  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false); // Stato per il dropdown mobile
-  const { t, i18n } = useTranslation();
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false); // Dropdown mobile
+  const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false); // Dropdown desktop
+  const { t } = useTranslation("translation");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,9 +28,11 @@ export default function Header() {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleLanguageMenu = () => setIsLanguageMenuOpen(!isLanguageMenuOpen);
+
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
-    setIsLanguageMenuOpen(false); // Chiude il dropdown mobile dopo la selezione
+    setIsLanguageMenuOpen(false); // Chiude il dropdown mobile
+    setIsLangDropdownOpen(false); // Chiude il dropdown desktop
   };
 
   return (
@@ -68,8 +72,12 @@ export default function Header() {
           >
             {t("header.login")}
           </Link>
-          {/* Dropdown lingua per desktop (dopo Login) */}
-          <div className="relative group">
+          {/* Dropdown lingua per desktop */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIsLangDropdownOpen(true)}
+            onMouseLeave={() => setIsLangDropdownOpen(false)}
+          >
             <button className="text-white hover:text-gray-400 flex items-center space-x-1">
               <ReactCountryFlag
                 countryCode={i18n.language === "en" ? "GB" : "IT"}
@@ -92,32 +100,34 @@ export default function Header() {
                 />
               </svg>
             </button>
-            <div className="absolute right-0 hidden group-hover:block bg-black bg-opacity-95 border border-gray-800 rounded-lg shadow-lg mt-2 py-2 w-36">
-              <button
-                onClick={() => changeLanguage("en")}
-                className="flex items-center w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-              >
-                <ReactCountryFlag
-                  countryCode="GB"
-                  svg
-                  style={{ width: "1.5em", height: "1.5em", marginRight: "0.5em" }}
-                  title="English"
-                />
-                English
-              </button>
-              <button
-                onClick={() => changeLanguage("it")}
-                className="flex items-center w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-              >
-                <ReactCountryFlag
-                  countryCode="IT"
-                  svg
-                  style={{ width: "1.5em", height: "1.5em", marginRight: "0.5em" }}
-                  title="Italiano"
-                />
-                Italiano
-              </button>
-            </div>
+            {isLangDropdownOpen && (
+              <div className="absolute right-0 top-full bg-black bg-opacity-95 border border-gray-800 rounded-lg shadow-lg py-2 w-36">
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className="flex items-center w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                >
+                  <ReactCountryFlag
+                    countryCode="GB"
+                    svg
+                    style={{ width: "1.5em", height: "1.5em", marginRight: "0.5em" }}
+                    title="English"
+                  />
+                  English
+                </button>
+                <button
+                  onClick={() => changeLanguage("it")}
+                  className="flex items-center w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                >
+                  <ReactCountryFlag
+                    countryCode="IT"
+                    svg
+                    style={{ width: "1.5em", height: "1.5em", marginRight: "0.5em" }}
+                    title="Italiano"
+                  />
+                  Italiano
+                </button>
+              </div>
+            )}
           </div>
         </nav>
 
@@ -160,7 +170,7 @@ export default function Header() {
             >
               {t("header.login")}
             </Link>
-            {/* Dropdown lingua per mobile (dopo Login) */}
+            {/* Dropdown lingua per mobile */}
             <div className="relative">
               <button
                 onClick={toggleLanguageMenu}
