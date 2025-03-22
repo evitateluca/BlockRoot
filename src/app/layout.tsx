@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import AOSInitializer from "@/components/AOSInitializer"; // Importa il componente per AOS
-import "@/styles/globals.css"; // Import corretto con alias "@"
-import Header from "@/components/Header"; // Importa il componente Header
-import Footer from "@/components/Footer"; // Importa il componente Footer
+import "@/styles/globals.css";
+import { Suspense } from "react";
+import TranslationProvider from "@/components/TranslationProvider";
 
 export const metadata: Metadata = {
   title: "BlockRoots - The Future of Mining",
@@ -17,7 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Suspense fallback={<div>Loading...</div>}>
+          <TranslationProvider>
+            {children}
+          </TranslationProvider>
+        </Suspense>
       </body>
     </html>
   );

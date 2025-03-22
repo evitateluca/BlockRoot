@@ -1,33 +1,22 @@
-import type { Metadata } from "next";
-import AOSInitializer from "@/components/AOSInitializer"; // Importa il componente per AOS
-import "@/styles/globals.css"; // Import corretto con alias "@"
-import Header from "@/components/Header"; // Importa il componente Header
-import Footer from "@/components/Footer"; // Importa il componente Footer
-import { Suspense } from "react";
-import TranslationProvider from "@/components/TranslationProvider"; // Importa il componente TranslationProvider
+"use client";
 
-export const metadata: Metadata = {
-  title: "BlockRoots - The Future of Mining",
-  description: "Decentralized, Transparent, and Sustainable Mining",
-};
+import dynamic from "next/dynamic";
+import Footer from "@/components/Footer";
 
-export default function RootLayout({
+const AOSInitializer = dynamic(() => import("@/components/AOSInitializer"), { ssr: false });
+const Header = dynamic(() => import("@/components/Header"), { ssr: false });
+
+export default function LandingLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>
-        <AOSInitializer /> {/* Inizializza AOS lato client */}
-        <Header /> 
-        <Suspense fallback={<div>Loading...</div>}>
-          <TranslationProvider>
-            <main>{children}</main>
-          </TranslationProvider>
-        </Suspense>
-        <Footer />
-      </body>
-    </html>
+    <>
+      <AOSInitializer />
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
   );
 }

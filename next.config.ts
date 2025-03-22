@@ -1,4 +1,5 @@
 module.exports = {
+  staticPageGenerationTimeout: 60,
   eslint: {
     ignoreDuringBuilds: true,
   },
